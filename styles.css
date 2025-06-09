@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Balto';
+    src: url('fonts/fonnts.com-Balto_Book.otf') format('opentype'),
+         url('fonts/fonnts.com-Balto_Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Balto';
+    src: url('fonts/fonnts.com-Balto_Bold.otf') format('opentype'),
+         url('fonts/fonnts.com-Balto_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #F2B56B;
+    font-family: 'Balto', sans-serif;
+    color: #000;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .content-box {
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
+  
+  .logo {
+    width: 280px;
+    height: auto;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Hide the title block completely */
+  .title-block {
+    display: none;
+  }
+  
+  .trust-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-top: 0.2rem;
+  }
+  
+  .message {
+    margin-left: 92px;
+    padding-left: 0;
+  }
+  
+  .message p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bold-text {
+    font-family: 'Balto';
+    font-weight: 750;
+    color: #000000;
+  }
+  
+  /* Footer bar */
+  .footer-line {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    background-color: #CD6740;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .content-box {
+      text-align: left;
+    }
+  
+    .logo-text-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0.3rem;
+    }
+  
+    .logo {
+      width: 200px;
+      margin-bottom: 0.5rem;
+    }
+  
+    .message {
+      margin-left: 0;
+      padding-left: 0;
+    }
+  
+    .message p {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+    
+    .message p:nth-child(1) {
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+    
+    .message p:nth-child(2) {
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+  }
